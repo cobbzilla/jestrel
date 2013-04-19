@@ -112,6 +112,11 @@ public class KestrelClient implements MqClient {
     }
 
     @Override
+    public void flushAllQueues() throws InterruptedException, MemcachedException, TimeoutException {
+        client.flushAll();
+    }
+
+    @Override
     public void deleteQueue(String queueName) throws InterruptedException, TimeoutException {
         try {
             client.delete(queueName);

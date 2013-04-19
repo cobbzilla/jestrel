@@ -18,6 +18,8 @@ public interface MqClient {
 
     public void registerConsumer(MqConsumer callback, String queueName, String errorQueueName);
 
+    public void flushAllQueues() throws InterruptedException, MemcachedException, TimeoutException;
+
     public void deleteQueue (String queueName) throws InterruptedException, MemcachedException, TimeoutException;
 
     /**

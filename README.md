@@ -46,14 +46,14 @@ So, building on top of the xmemcached library on googlecode, I wrote jestrel
     MqProducer producer = client.getProducer(queueName);
     producer.send("some message");
 
-### Registering a queue listener
+### Registering a queue consumer
 
     // I'm using an inline class here for brevity.
     // You will probably want to create your own class that implements the MqConsumer interface.
     MqConsumer consumer = new MqConsumer() {
         /**
          * @param o The message, which will be a String
-         * @exception Exception If any exception is thrown, the message will be put onto the errorQueue (unless it was set to null when the listener was registered)
+         * @exception Exception If any exception is thrown, the message will be put onto the errorQueue (unless it was set to null when the consumer was registered)
          */
         public void onMessage(Object o) throws Exception {
             System.out.println("received: " + o.toString());

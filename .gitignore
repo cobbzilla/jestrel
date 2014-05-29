@@ -5,3 +5,5 @@ tmp
 logs
 dependency-reduced-pom.xml
 velocity.log
+*~
+build.log

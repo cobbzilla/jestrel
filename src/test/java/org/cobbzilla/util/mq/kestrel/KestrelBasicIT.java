@@ -1,9 +1,9 @@
 package org.cobbzilla.util.mq.kestrel;
 
+import org.apache.commons.lang3.RandomStringUtils;
 import org.cobbzilla.util.mq.MqClient;
 import org.cobbzilla.util.mq.MqClientFactory;
 import org.cobbzilla.util.mq.MqProducer;
-import org.apache.commons.lang.RandomStringUtils;
 import org.junit.After;
 import org.junit.Before;
 import org.slf4j.Logger;

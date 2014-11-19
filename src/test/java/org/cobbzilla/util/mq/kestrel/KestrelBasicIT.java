@@ -27,7 +27,7 @@ public class KestrelBasicIT {
 
     private static final Logger LOG = LoggerFactory.getLogger(KestrelBasicIT.class);
 
-    public static final String TEST_KESTREL_HOST = "kestrel:22133";
+    public static final String TEST_KESTREL_HOST = "localhost:22133";
     public static final int WAIT_TIME = 100;
 
     protected MqClientFactory clientFactory = new MqClientFactory();

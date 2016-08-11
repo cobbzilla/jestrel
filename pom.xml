@@ -79,23 +79,6 @@ This code is available under the Apache License, version 2: http://www.apache.or
             <artifactId>jackson-databind</artifactId>
             <version>${jackson.version}</version>
         </dependency>
-
-        <!-- Monitoring -->
-        <dependency>
-            <groupId>com.yammer.metrics</groupId>
-            <artifactId>metrics-core</artifactId>
-            <version>2.2.0</version>
-        </dependency>
-        <dependency>
-            <groupId>com.yammer.metrics</groupId>
-            <artifactId>metrics-graphite</artifactId>
-            <version>2.2.0</version>
-        </dependency>
-        <dependency>
-            <groupId>com.sun.jersey</groupId>
-            <artifactId>jersey-server</artifactId>
-            <version>1.16</version>
-        </dependency>
     </dependencies>
 
     <build>
